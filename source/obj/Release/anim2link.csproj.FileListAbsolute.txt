@@ -1,0 +1,9 @@
+D:\Users\Nick\source\repos\anim2link\anim2link\bin\Release\anim2link.exe.config
+D:\Users\Nick\source\repos\anim2link\anim2link\bin\Release\anim2link.exe
+D:\Users\Nick\source\repos\anim2link\anim2link\bin\Release\anim2link.pdb
+D:\Users\Nick\source\repos\anim2link\anim2link\obj\Release\anim2link.csprojAssemblyReference.cache
+D:\Users\Nick\source\repos\anim2link\anim2link\obj\Release\anim2link.Form1.resources
+D:\Users\Nick\source\repos\anim2link\anim2link\obj\Release\anim2link.Properties.Resources.resources
+D:\Users\Nick\source\repos\anim2link\anim2link\obj\Release\anim2link.csproj.GenerateResource.cache
+D:\Users\Nick\source\repos\anim2link\anim2link\obj\Release\anim2link.exe
+D:\Users\Nick\source\repos\anim2link\anim2link\obj\Release\anim2link.pdb
