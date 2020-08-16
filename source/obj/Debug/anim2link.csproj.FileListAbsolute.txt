@@ -16,3 +16,12 @@ D:\Users\Nick\source\repos\anim2link\anim2link\obj\Debug\anim2link.Properties.Re
 D:\Users\Nick\source\repos\anim2link\anim2link\obj\Debug\anim2link.csproj.GenerateResource.cache
 D:\Users\Nick\source\repos\anim2link\anim2link\obj\Debug\anim2link.exe
 D:\Users\Nick\source\repos\anim2link\anim2link\obj\Debug\anim2link.pdb
+D:\anim2link\source\bin\Debug\anim2link.exe.config
+D:\anim2link\source\bin\Debug\anim2link.exe
+D:\anim2link\source\bin\Debug\anim2link.pdb
+D:\anim2link\source\obj\Debug\anim2link.Form1.resources
+D:\anim2link\source\obj\Debug\anim2link.Properties.Resources.resources
+D:\anim2link\source\obj\Debug\anim2link.csproj.GenerateResource.cache
+D:\anim2link\source\obj\Debug\anim2link.csproj.CoreCompileInputs.cache
+D:\anim2link\source\obj\Debug\anim2link.exe
+D:\anim2link\source\obj\Debug\anim2link.pdb
