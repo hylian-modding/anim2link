@@ -17,3 +17,12 @@ D:\anim2link\source\obj\Release\anim2link.csproj.GenerateResource.cache
 D:\anim2link\source\obj\Release\anim2link.csproj.CoreCompileInputs.cache
 D:\anim2link\source\obj\Release\anim2link.exe
 D:\anim2link\source\obj\Release\anim2link.pdb
+C:\Users\den\Source\Repos\anim2link\source\bin\Release\anim2link.exe.config
+C:\Users\den\Source\Repos\anim2link\source\bin\Release\anim2link.exe
+C:\Users\den\Source\Repos\anim2link\source\bin\Release\anim2link.pdb
+C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.Form1.resources
+C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.Properties.Resources.resources
+C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.csproj.GenerateResource.cache
+C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.csproj.CoreCompileInputs.cache
+C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.exe
+C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.pdb

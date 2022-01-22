@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -50,6 +51,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnExportAll = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -93,6 +97,7 @@
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -122,13 +127,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnExportAll);
+            this.groupBox2.Controls.Add(this.listBox1);
             this.groupBox2.Controls.Add(this.checkBox2);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Location = new System.Drawing.Point(291, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(205, 250);
+            this.groupBox2.Size = new System.Drawing.Size(205, 288);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Export";
@@ -136,7 +143,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 178);
+            this.checkBox2.Location = new System.Drawing.Point(6, 233);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(149, 17);
             this.checkBox2.TabIndex = 3;
@@ -145,7 +152,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(124, 217);
+            this.button2.Location = new System.Drawing.Point(124, 256);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -254,13 +261,48 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "1.0 (Oot)",
+            "Debug (Oot)",
+            "1.0 (MM)"});
+            this.listBox1.Location = new System.Drawing.Point(15, 178);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 43);
+            this.listBox1.TabIndex = 4;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // btnExportAll
+            // 
+            this.btnExportAll.Location = new System.Drawing.Point(43, 256);
+            this.btnExportAll.Name = "btnExportAll";
+            this.btnExportAll.Size = new System.Drawing.Size(75, 23);
+            this.btnExportAll.TabIndex = 5;
+            this.btnExportAll.Text = "Export All";
+            this.btnExportAll.UseVisualStyleBackColor = true;
+            this.btnExportAll.Click += new System.EventHandler(this.btnExportAll_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(12, 268);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(96, 23);
+            this.btnRefresh.TabIndex = 2;
+            this.btnRefresh.Text = "Refresh .anim";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 270);
+            this.ClientSize = new System.Drawing.Size(502, 302);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Link Animation Converter";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -297,6 +339,9 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnExportAll;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }
 
