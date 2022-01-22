@@ -94,15 +94,22 @@ namespace anim2link
                 byte[] _rom = File.ReadAllBytes(textBox2.Text);
                 BinaryWriter rombw = new BinaryWriter(new FileStream(textBox2.Text, FileMode.Open));
                 int link_animetion = Convert.ToInt32(textBox4.Text, 16);
+                byte[] _anime = Proc.GetByteArray(_rom, link_animetion, Anime_Size);
+
+                rombw.Seek(link_animetion, 0);
+                rombw.Write(_anime);
+
                 int gameplay_keep = Convert.ToInt32(textBox5.Text, 16);
                 int header = gameplay_keep + Convert.ToInt32(textBox3.Text, 16);
                 byte[] _header = Proc.GetByteArray(_rom, header, 8);
                 short _fc_old = (short)((_header[0] << 8) | (_header[1]));
                 int old_size = _fc_old * 0x86;
                 int anim_offset = (int)((_header[5] << 16) | (_header[6] << 8) | (_header[7]));
+                Console.WriteLine("_fc_old " + _fc_old.ToString());
+                Console.WriteLine("_fc_new " + (AnimationRaw.Length / 0x86).ToString());
                 if (AnimationRaw.Length > old_size)
                 {
-                    MessageBox.Show("The new animation is larger than the one being replaced.", "Write Aborted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("The new animation is larger than the one being replaced. Old: " + _fc_old.ToString() + ", New: " + (AnimationRaw.Length / 0x86).ToString(), "Write Aborted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     rombw.Close();
                     rombw.Dispose();
                     return;
@@ -128,7 +135,7 @@ namespace anim2link
                         Console.WriteLine("Done! " + fileOutPath + " Injected");
                     }
 
-                    byte[] _anime = Proc.GetByteArray(_rom, link_animetion, Anime_Size);
+                    _anime = Proc.GetByteArray(_rom, link_animetion, Anime_Size);
                     File.WriteAllBytes(Directory.GetParent(textBox2.Text) + "/link_animetion.zdata", _anime);
 
                     rombw.Close();

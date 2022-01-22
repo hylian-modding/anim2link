@@ -26,3 +26,4 @@ C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.csproj.Generate
 C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.csproj.CoreCompileInputs.cache
 C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.exe
 C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.pdb
+C:\Users\den\Source\Repos\anim2link\source\obj\Release\anim2link.csproj.AssemblyReference.cache
